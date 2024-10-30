@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+</head>
+
+<body>
+    <h2>Pops and Push in Javascript</h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    
+    <script>
+        var fruits = ["Apple", "Kiwi", "Coconut", "Lichi","Blueberries","Guavas"];
+        document.getElementById("p1").innerHTML = fruits;
+        document.getElementById("p2").innerHTML = fruits.join("_-_");
+        fruits.pop();
+        fruits.pop();
+        fruits.pop();
+        document.getElementById("p3").innerHTML = fruits;
+        fruits.push("Strawberry","Mango");
+        document.getElementById("p4").innerHTML = fruits;
+
+    </script>
+</body>
+
+</html>

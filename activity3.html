@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Call stack in Javascript</h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    
+    <script>
+        function sum(a,b,c){
+            return(a+b+c);
+        }
+        function avg(a,b,c){
+            return sum(a,b,c)/3;
+        }
+        let avgvalue=avg(67,87,34);
+        document.getElementById("p1").innerHTML="The average of 67, 87 and 34 is "+Math.floor(avgvalue);
+    </script>
+</body>
+</html>
